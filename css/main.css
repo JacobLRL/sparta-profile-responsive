@@ -61,7 +61,7 @@
     color: #202020;
 }
 
-.info .name {
+.name {
     width: calc(50% + 150px);
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
     text-transform: uppercase;
 }
 
-.info .summary {
+.summary {
     width: calc(50% - 150px);
     /* so text doesn't overlap image */
     padding: 10px;
@@ -152,4 +152,30 @@
 .footer-container ul li a {
     text-decoration: none;
     color: black;
+}
+
+@media(max-width:875px){
+    .skills {
+        height: auto;
+    }
+    
+    .info {
+        flex-direction: column;
+        padding-top: 175px;
+        max-width: 100%;
+    }
+
+    .info .name, .summary {
+        width: 95%;
+        flex-wrap: wrap;
+        padding-right: 20px;
+    }
+
+    .education-experience .education, .experience {
+        padding: 20px 15px;
+    }
+
+    .skills {
+        padding: 20px 20px;
+    }
 }
